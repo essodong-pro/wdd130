@@ -3,15 +3,17 @@
     --primary-color: #004080;
     /* deep blue */
     --accent1-color: #cc5200;
-    /* darker orange for contrast */
+    /* darker orange */
     --accent2-color: #f2f2f2;
-    /* light gray background */
+    /* light gray */
     --heading-font: 'Georgia', serif;
     --body-font: 'Arial', sans-serif;
 }
 
 /* Reset box model */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +23,7 @@
 body {
     font-family: var(--body-font);
     color: var(--primary-color);
-    /* text in deep blue for readability */
+    /* deep blue text */
     background-color: var(--accent2-color);
 }
 
@@ -51,27 +53,26 @@ article {
 
 /* Navigation links */
 nav a {
-    color: var(--accent1-color);
+    color: var(--primary-color);
+    /* switched to blue for contrast */
     font-weight: bold;
     text-decoration: none;
 }
 
 nav a:hover {
+    color: var(--accent1-color);
+    /* orange on hover */
     text-decoration: underline;
 }
 
-/* Remove underline from social media image links */
 .socialmedia a {
     text-decoration: none;
 }
 
-/* Hero section */
 .hero {
     position: relative;
-    /* allows absolute positioning of children */
 }
 
-/* Hero image fills container */
 .hero img {
     display: block;
     width: 100%;
@@ -88,24 +89,21 @@ nav a:hover {
     background-color: var(--accent1-color);
     /* orange background */
     color: #fff;
-    /* white text with good contrast */
-    opacity: 0.9;
-    /* slight transparency for overlay effect */
+    /* white text */
+    opacity: 0.95;
+
 }
 
-/* Hero article overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
     right: 20px;
     background-color: rgba(255, 255, 255, 0.95);
-    /* nearly opaque for readability */
     padding: 12px;
     border-radius: 8px;
 }
 
-/* Image inside hero article */
 .hero article img {
     float: right;
     width: 125px;
