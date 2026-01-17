@@ -3,9 +3,9 @@
     --primary-color: #004080;
     /* deep blue */
     --accent1-color: #cc5200;
-    /* darker orange for better contrast */
+    /* darker orange for contrast */
     --accent2-color: #f2f2f2;
-    /* light gray */
+    /* light gray background */
     --heading-font: 'Georgia', serif;
     --body-font: 'Arial', sans-serif;
 }
@@ -21,7 +21,7 @@
 body {
     font-family: var(--body-font);
     color: var(--primary-color);
-    /* switched to deep blue for contrast */
+    /* text in deep blue for readability */
     background-color: var(--accent2-color);
 }
 
@@ -49,7 +49,18 @@ article {
     padding: 8px;
 }
 
-/* Remove underline from social media links */
+/* Navigation links */
+nav a {
+    color: var(--accent1-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Remove underline from social media image links */
 .socialmedia a {
     text-decoration: none;
 }
@@ -74,10 +85,12 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: rgba(204, 82, 0, 0.85);
-    /* semi-transparent darker orange */
+    background-color: var(--accent1-color);
+    /* orange background */
     color: #fff;
-    /* white text now has enough contrast */
+    /* white text with good contrast */
+    opacity: 0.9;
+    /* slight transparency for overlay effect */
 }
 
 /* Hero article overlay */
@@ -86,8 +99,8 @@ article {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    /* slightly more opaque for readability */
+    background-color: rgba(255, 255, 255, 0.95);
+    /* nearly opaque for readability */
     padding: 12px;
     border-radius: 8px;
 }
