@@ -2,8 +2,8 @@
 :root {
     --primary-color: #004080;
     /* deep blue */
-    --accent1-color: #222222;
-    /* dark gray/black accent */
+    --accent1-color: #ffffff;
+    /* white accent for hero background */
     --accent2-color: #f2f2f2;
     /* light gray background */
     --heading-font: 'Georgia', serif;
@@ -60,8 +60,6 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent1-color);
-    /* dark gray on hover */
     text-decoration: underline;
 }
 
@@ -91,10 +89,11 @@ nav a:hover {
     padding: 16px;
     text-align: center;
     background-color: var(--accent1-color);
-    /* dark gray background */
-    color: #fff;
-    /* white text for strong contrast */
+    /* white background */
+    color: var(--primary-color);
+    /* blue text */
     opacity: 0.95;
+    /* slight transparency for overlay effect */
 }
 
 /* Hero article overlay */
