@@ -1,16 +1,11 @@
-/* CSS Variables */
 :root {
     --primary-color: #004080;
-    /* deep blue */
     --accent1-color: #ffffff;
-    /* white accent for hero background */
     --accent2-color: #f2f2f2;
-    /* light gray background */
     --heading-font: 'Georgia', serif;
     --body-font: 'Arial', sans-serif;
 }
 
-/* Reset box model */
 *,
 *::before,
 *::after {
@@ -19,15 +14,12 @@
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
     font-family: var(--body-font);
     color: var(--primary-color);
-    /* deep blue text */
     background-color: var(--accent2-color);
 }
 
-/* Limit page width and center */
 header,
 main,
 footer {
@@ -35,14 +27,12 @@ footer {
     margin: 0 auto;
 }
 
-/* Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* Basic margins and padding */
 nav,
 p,
 section,
@@ -51,10 +41,8 @@ article {
     padding: 8px;
 }
 
-/* Navigation links */
 nav a {
     color: var(--primary-color);
-    /* blue links */
     font-weight: bold;
     text-decoration: none;
 }
@@ -63,7 +51,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Remove underline from social media image links */
 .socialmedia a {
     text-decoration: none;
 }
@@ -71,17 +58,14 @@ nav a:hover {
 /* Hero section */
 .hero {
     position: relative;
-    /* allows absolute positioning of children */
 }
 
-/* Hero image fills container */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* Hero heading overlay */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -89,14 +73,10 @@ nav a:hover {
     padding: 16px;
     text-align: center;
     background-color: var(--accent1-color);
-    /* white background */
     color: var(--primary-color);
-    /* blue text */
     opacity: 0.95;
-    /* slight transparency for overlay effect */
 }
 
-/* Hero article overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -107,11 +87,83 @@ nav a:hover {
     border-radius: 8px;
 }
 
-/* Image inside hero article */
 .hero article img {
     float: right;
     width: 125px;
     margin: 8px;
     border-radius: 4px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Header layout */
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+header nav a {
+    color: var(--accent1-color);
+}
+
+/* History section */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--accent2-color);
+}
+
+.history img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Adventures section */
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.adventures figure {
+    flex: 1;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    padding: 1rem;
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .socialmedia img {
+    width: 24px;
+    height: 24px;
 }
