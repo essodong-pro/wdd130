@@ -42,7 +42,6 @@ article {
 }
 
 nav a {
-    color: var(--primary-color);
     font-weight: bold;
     text-decoration: none;
 }
@@ -112,6 +111,7 @@ header nav {
 
 header nav a {
     color: var(--accent1-color);
+    /* blanc pour contraste */
 }
 
 /* History section */
@@ -166,4 +166,30 @@ footer .socialmedia {
 footer .socialmedia img {
     width: 24px;
     height: 24px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+
+    header,
+    main,
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+
+    .history {
+        grid-template-columns: 1fr;
+        /* une seule colonne sur mobile */
+    }
+
+    .adventures {
+        flex-direction: column;
+        /* images empilées */
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
