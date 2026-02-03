@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Down the River Company - Contact Us</title>
     <meta name="description"
-      content="Get in touch with Down the River Company. Find our address, phone, email, and connect with our team for reservations, inquiries, or suggestions.">
+      content="Get in touch with Down the River Company Company. Find our address, phone, email, and connect with our team for reservations, inquiries, or suggestions.">
     <meta name="author" content="Essodong N'GNAMA">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -36,7 +36,7 @@
 
         <!-- Division en deux colonnes -->
         <section class="contact-section">
-            <h2>Contact Us</h2>
+
             <!-- Colonne gauche : carte -->
             <div class="contact-left">
                 <div class="map">
@@ -54,27 +54,25 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Your email" required>
 
-                    <fieldset>
-                        <legend>Message Purpose:</legend>
-                        <input type="radio" id="purpose-general" name="purpose" value="general"
-                          required>
-                        <label for="purpose-general">General Inquiry</label>
-
-                        <input type="radio" id="purpose-reservation" name="purpose"
-                          value="reservation">
-                        <label for="purpose-reservation">Reservation Question</label>
-
-                        <input type="radio" id="purpose-suggestion" name="purpose"
-                          value="suggestion">
-                        <label for="purpose-suggestion">Website Suggestion</label>
+                    <label for="purpose">Message
+                        Purpose:</label>
+                    <fieldset id="purpose">
+                        <label><input type="radio" name="purpose" value="general"> General
+                            Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation"> Reservation
+                            Question</label>
+                        <label><input type="radio" name="purpose" value="suggestion"> Website
+                            Suggestion</label>
                     </fieldset>
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" placeholder="Type here..."
                       required></textarea>
 
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    <label>
+                        <input type="checkbox" name="newsletter"> Please subscribe me to the monthly
+                        newsletter
+                    </label>
 
                     <button type="submit">Get in Touch!</button>
                 </form>
