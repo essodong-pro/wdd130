@@ -229,14 +229,12 @@ footer .socialmedia img {
 }
 
 /* CONTACT */
-/* Contact Section Layout */
 .contact-section {
     display: flex;
     flex-wrap: wrap;
-    /* permet de s'adapter aux petits écrans */
     gap: 2rem;
     padding: 2rem;
-    background: #f9f9f9;
+    background: var(--accent2-color);
 }
 
 .contact-left,
@@ -245,40 +243,11 @@ footer .socialmedia img {
     min-width: 300px;
 }
 
-/* Company Info */
-.contact-left h1 {
-    margin-bottom: 1rem;
-    color: #004466;
-}
-
-/* Fieldset pour Message Purpose */
-.contact-right fieldset {
-    display: flex;
-    flex-direction: column;
-    /* options empilées verticalement */
-    align-items: flex-start;
-    /* aligne les radios à gauche */
-    gap: 0.5rem;
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-.contact-left p {
-    margin: 0.5rem 0;
-}
-
 .map iframe {
     width: 100%;
     height: 250px;
+    /* fixe, tu peux mettre 100% si tu veux responsive */
     border: none;
-    margin-top: 1rem;
-}
-
-/* Contact Form */
-.contact-right h2 {
-    margin-bottom: 1rem;
-    color: #004466;
 }
 
 .contact-right form {
@@ -300,16 +269,20 @@ footer .socialmedia img {
 }
 
 .contact-right fieldset {
-    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
     border: 1px solid #ccc;
     padding: 1rem;
+    margin-top: 1rem;
 }
 
 .contact-right button {
     margin-top: 1.5rem;
     padding: 0.7rem;
-    background: #004466;
-    color: white;
+    background: var(--primary-color);
+    color: var(--accent1-color);
     border: none;
     border-radius: 4px;
     font-size: 1rem;
@@ -318,18 +291,13 @@ footer .socialmedia img {
 
 .contact-right button:hover {
     background: #006699;
+    /* tu peux créer var(--primary-hover) */
 }
 
-/* Team Section */
 .team {
     text-align: center;
     padding: 2rem;
-    background: #e6f2f5;
-}
-
-.team h2 {
-    margin-bottom: 1rem;
-    color: #004466;
+    background: var(--accent2-color);
 }
 
 .team figure {
@@ -348,65 +316,17 @@ footer .socialmedia img {
     font-style: italic;
 }
 
-/* Footer */
-footer {
-    background: #004466;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-footer .socialmedia img {
-    width: 24px;
-    margin: 0 0.5rem;
-}
-
-/* Bloc texte centré sans espace supplémentaire */
 .company-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* centre verticalement */
-    align-items: center;
-    /* centre horizontalement */
     text-align: center;
     margin: 0;
-    /* supprime les marges */
     padding: 0;
-    /* supprime les paddings */
 }
 
-/* Réduction de l’espace entre les lignes */
 .company-info h1 {
     margin-bottom: 0.3rem;
-    /* réduit l’espace sous le titre */
 }
 
 .company-info p {
     margin: 0.2rem 0;
-    /* réduit l’espace vertical entre adresse, téléphone et email */
-    line-height: 0;
-    /* resserre la hauteur des lignes */
-}
-
-/* Colonne gauche : infos + carte */
-.contact-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* pousse la carte à occuper tout l’espace restant */
-}
-
-/* Carte occupe toute la hauteur disponible */
-.map {
-    flex: 1;
-    /* prend tout l’espace vertical restant */
-    display: flex;
-}
-
-.map iframe {
-    width: 100%;
-    height: 100%;
-    /* occupe toute la hauteur de la colonne gauche */
-    border: none;
+    line-height: 1.2;
 }
