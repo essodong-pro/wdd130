@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Down the River Company - Contact Us</title>
-    <meta name="description"
-      content="Get in touch with Down the River Company. Find our address, phone, email, and connect with our team for reservations, inquiries, or suggestions.">
+    <meta name="description" content="Get in touch with Down the River Company.">
     <meta name="author" content="Essodong N'GNAMA">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <!-- Header -->
     <header>
         <img src="images/down-the-river.png" alt="Down the River Logo" width="150">
         <nav>
@@ -24,7 +22,6 @@
     </header>
 
     <main>
-        <!-- Bloc texte centré -->
         <section class="company-info">
             <h1>Down the River Company</h1>
             <p>123 Main River Street</p>
@@ -33,18 +30,15 @@
             <p>Email: info@DowntheRiver.com</p>
         </section>
 
-        <!-- Division en deux colonnes -->
         <section class="contact-section">
-            <h2 class="visually-hidden">Contact Section</h2>
-            <!-- Colonne gauche : carte -->
             <div class="contact-left">
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen
-                      loading="lazy"></iframe>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12345!2d-122.0!3d37.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v123456789"
+                      allowfullscreen loading="lazy"></iframe>
                 </div>
             </div>
 
-            <!-- Colonne droite : formulaire -->
             <div class="contact-right">
                 <form action="#" method="post">
                     <label for="name">Name:</label>
@@ -55,52 +49,59 @@
 
                     <fieldset>
                         <legend>Message Purpose:</legend>
-                        <input type="radio" id="purpose-general" name="purpose" value="general"
-                          required>
-                        <label for="purpose-general">General Inquiry</label>
-
-                        <input type="radio" id="purpose-reservation" name="purpose"
-                          value="reservation">
-                        <label for="purpose-reservation">Reservation Question</label>
-
-                        <input type="radio" id="purpose-suggestion" name="purpose"
-                          value="suggestion">
-                        <label for="purpose-suggestion">Website Suggestion</label>
+                        <div>
+                            <input type="radio" id="purpose-general" name="purpose" value="general"
+                              required>
+                            <label for="purpose-general">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="purpose-reservation" name="purpose"
+                              value="reservation">
+                            <label for="purpose-reservation">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="purpose-suggestion" name="purpose"
+                              value="suggestion">
+                            <label for="purpose-suggestion">Website Suggestion</label>
+                        </div>
                     </fieldset>
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" placeholder="Type here..."
                       required></textarea>
 
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    <div class="newsletter-box">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Please subscribe me to the monthly
+                            newsletter</label>
+                    </div>
 
                     <button type="submit">Get in Touch!</button>
                 </form>
             </div>
         </section>
 
-        <!-- Employee Profiles -->
         <section class="team">
             <h2>We Are Here to Serve You</h2>
-            <figure>
-                <img src="images/employee1.jpg" alt="Employee Profile 1">
-                <figcaption>John Carter: Rafting Guide and caregiver</figcaption>
-            </figure>
-            <figure>
-                <img src="images/employee2.jpg" alt="Employee Profile 2">
-                <figcaption>Julie Montgommery: Reservation Manager</figcaption>
-            </figure>
-            <figure>
-                <img src="images/employee3.jpg" alt="Employee Profile 3">
-                <figcaption>Ashley Smith: Senior Rafting Instructor</figcaption>
-            </figure>
+            <div class="team-container">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Employee 1">
+                    <figcaption>John Carter: Rafting Guide and caregiver</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee 2">
+                    <figcaption>Julie Montgommery: Reservation Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee 3">
+                    <figcaption>Ashley Smith: Senior Rafting Instructor</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Down the River | Essodong N'GNAMA</p>
+        <p>© 2026 Down the River | Essodong N'GNAMA</p>
         <nav class="socialmedia">
             <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
             <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
